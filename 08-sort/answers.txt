@@ -1,0 +1,20 @@
+sort1 uses: bubble
+
+How do you know?: Fastest when already sorted since lower bound is Omega(n), but slowest in random and reversed since higher bound is O(n^2)
+
+sort2 uses: merge
+
+How do you know?: Consistently fast times accross all three types of input since lower and higher bounds are the same - O(n log n) & Omega(n log n)
+
+sort3 uses: selection
+
+How do you know?: Consistently slow times accross all three types of input since lower and higher bounds are the same - O(n^2) & Omega(n^2)
+
+
+sort2 only ever slower than any other sort in "sorted" category vs sort1 (n log n bigger/slower than n)
+sort2 and sort3 have consistent speeds because lower and higher bounds are the same (n log n is smaller/faster than n^2)
+
+
+sort1 -> sorted 0.3s reversed 5s random 6.6s
+sort2 -> sorted 0.4s reversed 0.4s random 0.4s
+sort3 -> sorted 2.6s reversed 2.9s random 2.9s
